@@ -1,0 +1,25 @@
+{
+    "name": "Entrega6_sockets",
+    "author": "CORE-2020",
+    "description": "CORE_Entrega6_sockets",
+    "license": "GNU",
+    "version": "0.0.0",
+    "info": {
+        "githubURL": "CORE-2020/Entrega6_sockets",
+        "serverUrl": "https://autocorector.dit.upm.es/",
+        "courseId": "8249",
+        "assignmentId": "77479"
+    },
+    "scripts": {
+        "migrate": "sequelize db:migrate --url sqlite://$(pwd)/db.sqlite",
+        "seed": "sequelize db:seed:all --url sqlite://$(pwd)/db.sqlite",
+        "migrate_win": "sequelize db:migrate --url sqlite://%cd%/db.sqlite",
+        "seed_win": "sequelize db:seed:all --url sqlite://%cd%/db.sqlite",
+        "start": "node main.js"
+    },
+    "dependencies": {
+        "sequelize": "^5.21.3",
+        "sequelize-cli": "^5.5.0",
+        "sqlite3": "^4.0.9"
+    }
+}
